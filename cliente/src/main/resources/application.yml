@@ -1,0 +1,14 @@
+spring:
+  name: mscliente
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+topic:
+  endereco-client: topic_endereco_cliente
+
+server:
+  port: 9000

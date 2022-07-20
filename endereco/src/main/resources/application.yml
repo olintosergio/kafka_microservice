@@ -1,0 +1,17 @@
+spring:
+  name: msviacep
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+topic:
+  endereco-client: topic_endereco_cliente
+
+server:
+  port: 8080
+
+api:
+  cep:
+    username: admin
+    password: admin123
